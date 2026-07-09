@@ -428,14 +428,17 @@ h2.section-title { font-size: var(--text-xl); text-align: center; margin-bottom:
   gap: var(--space-5);
   margin-bottom: var(--space-10);
 }
-.contact-info-row .card { text-align: center; padding: var(--space-6) var(--space-4); }
+.contact-info-row .card { text-align: center; padding: var(--space-6) var(--space-4); min-width: 0; }
 .contact-info-row strong {
   display: block; color: var(--color-primary-bright); font-size: var(--text-xs);
   text-transform: uppercase; letter-spacing: 1.4px; margin-bottom: var(--space-2);
 }
 .contact-info-row .card svg { width: 26px; height: 26px; color: var(--color-primary-bright); margin: 0 auto var(--space-3); }
-.contact-info-row a { color: var(--color-text); font-weight: 600; }
+.contact-info-row a { color: var(--color-text); font-weight: 600; overflow-wrap: anywhere; word-break: break-word; }
 .contact-info-row a:hover { color: var(--color-primary-bright); }
+@media (max-width: 600px) {
+  .contact-info-row { grid-template-columns: 1fr; }
+}
 
 .contact-form { max-width: 640px; margin: 0 auto; }
 .form-row { margin-bottom: var(--space-5); }
