@@ -303,7 +303,7 @@ a, button, [role="button"] { transition: color var(--transition), background var
     linear-gradient(160deg, var(--color-surface), var(--color-bg));
 }
 .page-hero-content { position: relative; max-width: 680px; margin: 0 auto; }
-.page-hero .crest { width: 56px; height: 56px; color: var(--color-primary-bright); margin: 0 auto var(--space-4); }
+.page-hero .crest { width: 64px; height: 64px; object-fit: contain; display: block; margin: 0 auto var(--space-4); }
 .page-hero h1 { font-size: var(--text-2xl); color: #fbf3e2; margin-bottom: var(--space-2); }
 .page-hero .subtitle {
   font-family: var(--font-body);
