@@ -374,8 +374,10 @@ h2.section-title { font-size: var(--text-xl); text-align: center; margin-bottom:
   background: var(--color-surface);
   box-shadow: var(--shadow-sm);
 }
-.gallery-grid img { width: 100%; height: 360px; object-fit: cover; transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
-.gallery-grid figure:hover img { transform: scale(1.06); }
+.gallery-grid img,
+.gallery-grid video { display: block; width: 100%; height: 360px; object-fit: cover; transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+.gallery-grid figure:hover img,
+.gallery-grid figure:hover video { transform: scale(1.06); }
 .gallery-grid figcaption {
   position: absolute; left: 0; right: 0; bottom: 0;
   padding: var(--space-5) var(--space-4) var(--space-3);
